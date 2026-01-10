@@ -235,9 +235,8 @@ article:hover .icon {
         overflow-x: hidden;
     }
 
-    .contact-info-container p {
-        font-size: 1rem;
-        text-align: left;
+    .contact-info-container {
+        justify-content: left;
     }
     
     footer {
