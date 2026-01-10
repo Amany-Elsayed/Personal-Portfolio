@@ -234,6 +234,10 @@ article:hover .icon {
         box-sizing: border-box;
         overflow-x: hidden;
     }
+
+    .contact-info-container p {
+        font-size: xx-small
+    }
     
     footer {
         height: 40vh;
