@@ -236,7 +236,8 @@ article:hover .icon {
     }
 
     .contact-info-container p {
-        font-size: xx-small
+        font-size: 5px;
+        justify-content: flex-start;
     }
     
     footer {
