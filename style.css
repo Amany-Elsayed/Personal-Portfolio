@@ -510,6 +510,7 @@ section.animate-in {
 
 #about {
     position: relative;
+    margin-top: 5rem;
     padding-bottom: 5rem;
     margin-bottom: 3rem;
     background: linear-gradient(135deg, var(--dark-blue-secondary) 0%, var(--dark-blue) 100%);
