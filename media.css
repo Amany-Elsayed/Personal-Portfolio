@@ -236,8 +236,8 @@ article:hover .icon {
     }
 
     .contact-info-container p {
-        font-size: 5px;
-        justify-content: flex-start;
+        font-size: 1rem;
+        text-align: left;
     }
     
     footer {
