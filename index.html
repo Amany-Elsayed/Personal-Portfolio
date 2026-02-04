@@ -1,290 +1,471 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="media.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css" />
+  </head>
+  <body>
     <nav id="desk-nav">
-        <div class="logo"> 【=︿=】 </div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Expereince</a></li>
-                <li><a href="#project">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
+      <div class="logo">【=︿=】</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Expereince</a></li>
+          <li><a href="#project">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </nav>
 
     <nav id="hamburger-nav">
-        <div class="logo"> 【=︿=】 </div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Expereince</a></li>
-                <li><a href="#project" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-            </div>
+      <div class="logo">【=︿=】</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Expereince</a></li>
+          <li><a href="#project" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
     </nav>
 
     <section id="profile">
-        <div class="section__pic-container">
-            <img src="./assets/profile-pic.png" alt="amany elsayed profile pic" class="profile-pic">
+      <div class="section__pic-container">
+        <img
+          src="./assets/profile-pic.png"
+          alt="amany elsayed profile pic"
+          class="profile-pic"
+        />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Amany Elsayed</h1>
+        <p class="section__text__p2">Full Stack Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Amany Elsayed.pdf')"
+          >
+            Show CV
+          </button>
+          <button
+            class="btn btn-color-1"
+            onclick="location.href = './#contact'"
+          >
+            Contact Info
+          </button>
         </div>
-        <div class="section__text">
-            <p class="section__text__p1">Hello, I'm </p>
-            <h1 class="title">Amany Elsayed</h1>
-            <p class="section__text__p2">Full Stack Developer</p>
-            <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/Amany Elsayed.pdf')">Show CV</button>
-                <button class="btn btn-color-1" onclick="location.href = './#contact'">Contact Info</button>
-            </div>
-            <div id="socials-container">
-                <img src="./assets/linkedin.png" alt="My linkedIn profile" class="icon" onclick="location.href = 'https://www.linkedin.com/in/amany-elsayed0/'">
-                <img src="./assets/github.png" alt="My github profile" class="icon" onclick="location.href = 'https://github.com/Amany-Elsayed'">
-            </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My linkedIn profile"
+            class="icon"
+            onclick="
+              location.href = 'https://www.linkedin.com/in/amany-elsayed0/'
+            "
+          />
+          <img
+            src="./assets/github.png"
+            alt="My github profile"
+            class="icon"
+            onclick="location.href = 'https://github.com/Amany-Elsayed'"
+          />
         </div>
+      </div>
     </section>
 
     <section id="about">
-        <p class="section__text__p1">Get to Know More</p>
-        <h1 class="title">Aboute Me</h1>
-        <div class="section-container">
-            <div class="about-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <img src="./assets/experience.png" alt="experience icon" class="icon">
-                        <h3>Experience</h3>
-                        <p style="font-weight: bolder; color: aliceblue;">+1 Years</p>
-                        <p>Full Stack Development</p>
-                        <p style="font-weight: bolder; color: aliceblue;">+5 Years</p>
-                        <p>Photo Editing</p>
-                        <p>Microsoft Office</p>
-                    </div>
-                    <div class="details-container">
-                        <img src="./assets/education.png" alt="education icon" class="icon">
-                        <h3>Education</h3>
-                        <p style="font-weight: bolder; color: aliceblue;">Bachelore Degree in</p>
-                        <p>Electronic Communication Engineering</p>
-                    </div>
-                </div>
-                <div class="text-container about-text">
-                    <p>I combine technical development, project management, and UI/UX design skills to build reliable, well-crafted digital solutions. From leading teams to developing full-stack MEAN applications, I focus on quality, clarity, and delivering results that matter.</p>
-                </div>
+      <p class="section__text__p1">Get to Know More</p>
+      <h1 class="title">Aboute Me</h1>
+      <div class="section-container">
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p style="font-weight: bolder; color: aliceblue">+1 Years</p>
+              <p>Full Stack Development</p>
+              <p style="font-weight: bolder; color: aliceblue">+5 Years</p>
+              <p>Photo Editing</p>
+              <p>Microsoft Office</p>
             </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p style="font-weight: bolder; color: aliceblue">
+                Bachelore Degree in
+              </p>
+              <p>Electronic Communication Engineering</p>
+            </div>
+          </div>
+          <div class="text-container about-text">
+            <p>
+              I combine technical development, project management, and UI/UX
+              design skills to build reliable, well-crafted digital solutions.
+              From leading teams to developing full-stack MEAN applications, I
+              focus on quality, clarity, and delivering results that matter.
+            </p>
+          </div>
         </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href = './#experience'">
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href = './#experience'"
+      />
     </section>
 
     <section id="experience">
-        <p class="section__text__p1">Explore My</p>
-        <h1 class="title">Experience</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container">
-                    <h2 class="experience-subtitle">Frontend Development</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>HTML</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>CSS</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>JavaScript</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>TypeScript</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                    </div>
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-subtitle">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
                 </div>
-                <div class="details-container">
-                    <h2 class="experience-subtitle">Backend Development</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>Express JS</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>Node JS</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>Git</h3>
-                                <p>Beginner</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>MongoDB</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                    </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
                 </div>
-                <div class="details-container">
-                    <h2 class="experience-subtitle">Graphic Design</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>Figma</h3>
-                                <p>Beginner</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>Photoshop</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>Canva</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                    </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
                 </div>
-                <div class="details-container">
-                    <h2 class="experience-subtitle">Addtional Experiences</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>Microsoft Office</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>Software</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>Hardware</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                    </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>TypeScript</h3>
+                  <p>Basic</p>
                 </div>
+              </article>
             </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-subtitle">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Express JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Beginner</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MongoDB</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-subtitle">Graphic Design</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Figma</h3>
+                  <p>Beginner</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Photoshop</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Canva</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-subtitle">Addtional Experiences</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Microsoft Office</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Software</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Hardware</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
         </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href = './#projects'">
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href = './#projects'"
+      />
     </section>
 
     <section id="project">
-        <p class="section__text__p1">Browse My Recent</p>
-        <h1 class="title">Projects</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container color container">
-                    <div class="article-container">
-                        <img src="./assets/project-1.png" alt="project 1" class="project-img">
-                    </div>
-                    <h2 class="experience-subtitle project-title">Basic Portfolio</h2>
-                    <p>A clean and modern portfolio website built with vanilla HTML, CSS, and JavaScript. This responsive portfolio showcases your professional information, experience, projects, and contact details.</p>
-                    <br>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href = 'https://github.com/Amany-Elsayed/Portfolio-Basic'">GitHub</button>
-                    </div>
-                </div>
-                <div class="details-container color container">
-                    <div class="article-container">
-                        <img src="./assets/project-2.png" alt="project 3" class="project-img">
-                    </div>
-                    <h2 class="experience-subtitle project-title">AI Grading Service</h2>
-                    <p>This project provides an automatic grading service for paragraph-based exam questions using semantic similarity powered by Sentence Transformers. The service is exposed as a REST API and is designed to be consumed by a backend application (e.g., PHP) and a mobile frontend (e.g., Flutter).</p>
-                    <br>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href = 'https://github.com/Amany-Elsayed/AI-Grading-Model'">GitHub</button>
-                    </div>
-                </div>
-                <div class="details-container color container">
-                    <div class="article-container">
-                        <img src="./assets/project-3.png" alt="project 3" class="project-img">
-                    </div>
-                    <h2 class="experience-subtitle project-title">5000 Words Game</h2>
-                    <p>A clean and modern mobile game UI concept designed using Figma and Adobe Photoshop. This project presents a 5000 Words game featuring multiple rounds and progressive difficulty levels, focusing on intuitive navigation, clear visual hierarchy, and an engaging user experience. The design emphasizes simplicity, accessibility, and playful interactions, making it suitable as a foundation for a fully interactive word-based game.</p>
-                    <br>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href = 'https://www.figma.com/proto/NpYu2oHu4Hamvv0PNYh6AL/5000-Words-Concept?node-id=0-1&t=bElsXv0J33rQHlLe-1'">Figma</button>
-                    </div>
-                </div>
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="project 1"
+                class="project-img"
+              />
             </div>
+            <h2 class="experience-subtitle project-title">ChatApp</h2>
+            <p>
+              A full-stack real-time chat application built with the MEAN stack
+              (MongoDB, Express.js, Angular, Node.js) featuring WebSocket
+              support for instant messaging.
+            </p>
+            <br />
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="
+                  location.href = 'https://github.com/Amany-Elsayed/Chats-App'
+                "
+              >
+                GitHub
+              </button>
+            </div>
+          </div>
+          <div class="details-container color container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-subtitle project-title">
+              AI Grading Service
+            </h2>
+            <p>
+              This project provides an automatic grading service for
+              paragraph-based exam questions using semantic similarity powered
+              by Sentence Transformers. The service is exposed as a REST API and
+              is designed to be consumed by a backend application (e.g., PHP)
+              and a mobile frontend (e.g., Flutter).
+            </p>
+            <br />
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="
+                  location.href =
+                    'https://github.com/Amany-Elsayed/AI-Grading-Model'
+                "
+              >
+                GitHub
+              </button>
+            </div>
+          </div>
+          <div class="details-container color container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-subtitle project-title">5000 Words Game</h2>
+            <p>
+              A clean and modern mobile game UI concept designed using Figma and
+              Adobe Photoshop. This project presents a 5000 Words game featuring
+              multiple rounds and progressive difficulty levels, focusing on
+              intuitive navigation, clear visual hierarchy, and an engaging user
+              experience. The design emphasizes simplicity, accessibility, and
+              playful interactions, making it suitable as a foundation for a
+              fully interactive word-based game.
+            </p>
+            <br />
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="
+                  location.href =
+                    'https://www.figma.com/proto/NpYu2oHu4Hamvv0PNYh6AL/5000-Words-Concept?node-id=0-1&t=bElsXv0J33rQHlLe-1'
+                "
+              >
+                Figma
+              </button>
+            </div>
+          </div>
         </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href = './#contact'">
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href = './#contact'"
+      />
     </section>
 
     <section id="contact">
-        <p class="section__text__p1">Get In Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img src="./assets/email.png" alt="email icon" class="icon contact-icon email-icon">
-                <p><a href="mailto:amanyelsayed0@outlook.com">amanyelsayed0@outlook.com</a></p>
-            </div>
-            <div class="contact-info-container">
-                <img src="./assets/linkedin.png" alt="linkedin icon" class="icon contact-icon">
-                <p><a href="https://www.linkedin.com/in/amany-elsayed0/">LinkedIn</a></p>
-            </div>
+      <p class="section__text__p1">Get In Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="mailto:amanyelsayed0@outlook.com"
+              >amanyelsayed0@outlook.com</a
+            >
+          </p>
         </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="linkedin icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a href="https://www.linkedin.com/in/amany-elsayed0/">LinkedIn</a>
+          </p>
+        </div>
+      </div>
     </section>
 
     <footer>
-        <nav>
-            <div class="nav-links-container">
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Expereince</a></li>
-                    <li><a href="#project">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>   
-            </div>
-        </nav>
-        <p>Copyright &#169; 2025 【=︿=】. All Rights Reserved</p>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Expereince</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 【=︿=】. All Rights Reserved</p>
     </footer>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
