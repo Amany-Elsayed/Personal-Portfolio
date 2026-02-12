@@ -11,12 +11,32 @@
     --grey-bg: #f3f4f6;
     --grey-dark: #6d7d94;
     --white: #ffffff;
+    --toggle-knob: #ffffff;
     --shadow-sm: 0 2px 8px rgba(26, 35, 50, 0.1);
     --shadow-md: 0 4px 16px rgba(26, 35, 50, 0.15);
     --shadow-lg: 0 8px 32px rgba(26, 35, 50, 0.2);
     --transition-fast: 0.2s ease;
     --transition-normal: 0.3s ease;
     --transition-slow: 0.5s ease;
+}
+
+/* LIGHT MODE */
+
+body.light-theme {
+    --dark-blue: #f9fafb;
+    --dark-blue-secondary: #ffffff;
+    --light-blue: #2563eb;
+    --light-blue-hover: #1d4ed8;
+    --light-blue-light: #60a5fa;
+    --grey-text: #374151;
+    --grey-border: #d1d5db;
+    --gery-bg: #f3f4f6;
+    --gery-dark: #4b5563;
+    --white: #111827;
+
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.12);
 }
 
 *{
@@ -86,6 +106,81 @@ a, .btn {
     transition: all var(--transition-normal);
 }
 
+.theme-switch {
+  position: relative;
+  display: inline-block;
+  width: 52px;
+  height: 26px;
+}
+
+.theme-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  inset: 0;
+  background-color: var(--grey-border);
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider::before,
+.slider::after {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  left: 3px;
+  bottom: 3px;
+  background-color: var(--toggle-knob);
+  border-radius: 50%;
+  box-shadow: var(--shadow-sm);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+
+  transition: transform 0.4s ease, opacity 0.3s ease;
+}
+
+.slider::before {
+  content: "🌙";
+  opacity: 1;
+  transform: translateX(0) scale(1) rotate(0deg);
+}
+
+.slider::after {
+  content: "☀️";
+  opacity: 0;
+  transform: translateX(0) scale(0.5) rotate(-90deg);
+}
+
+.theme-switch input:checked + .slider::before {
+  opacity: 0;
+  transform: translateX(26px) scale(0.5) rotate(90deg);
+}
+
+.theme-switch input:checked + .slider::after {
+  opacity: 1;
+  transform: translateX(26px) scale(1) rotate(0deg);
+}
+
+.theme-switch input:checked + .slider {
+  background-color: var(--light-blue);
+}
+
+.slider:hover {
+  box-shadow: 0 0 8px rgba(74,144,226,0.6);
+}
+
+.slider::before {
+  color: var(--light-blue);
+}
+
 nav, .nav-links {
     display: flex;
 }
@@ -150,6 +245,12 @@ a:hover::after {
     font-weight: 600;
     transition: all var(--transition-normal);
     text-shadow: 0 2px 8px rgba(74, 144, 226, 0.3);
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
 }
 
 .logo:hover {
