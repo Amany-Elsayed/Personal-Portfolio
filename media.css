@@ -132,6 +132,9 @@ article:hover .icon {
     #hamburger-nav {
         display: flex;
         background-color: var(--dark-blue);
+        height: 12vh;
+        justify-content: space-between;
+        padding: 0 2rem;
     }
 
     .contact-info-upper-container {
@@ -236,11 +239,12 @@ article:hover .icon {
     }
 
     .contact-info-container {
-        justify-content: left;
+        justify-content: center;
     }
     
     footer {
-        height: 40vh;
+        height: auto;
+        padding-bottom: 2rem;
     }
 
     #profile {
@@ -258,6 +262,8 @@ article:hover .icon {
         min-width: 100%;
         max-width: 100%;
         width: 100%;
+        justify-content: center;
+        text-align: center;
     }
     
     article h3 {
@@ -292,15 +298,22 @@ article:hover .icon {
         width: 100%;
         max-width: 100%;
         margin: 0.25rem 0;
-        padding: 0.8rem;
-        justify-content: flex-start;
+        padding: 1rem 0.5rem;
+        justify-content: center;
+        flex-direction: column;
+        gap: 0.5rem;
         box-sizing: border-box;
     }
 
     .contact-info-container p {
         font-size: 0.85rem;
-        text-align: left;
-        word-wrap: break-word;
+        text-align: center;
+        word-break: break-word;
+        letter-spacing: -0.2px;
+    }
+
+    .contact-info-container:hover {
+        transform: translateY(-5px);
     }
 
     .nav-links li a {
@@ -340,7 +353,7 @@ article:hover .icon {
     }
 
     .text-container {
-        text-align: justify;
+        text-align: center;
     }
     
     @media (prefers-reduced-motion: no-preference) {
@@ -382,11 +395,11 @@ article:hover .icon {
     
     #project .experience-details-container .details-container {
         flex: 0 0 auto;
-        width: 90%;
-        max-width: 400px;
+        width: 100%;
+        max-width: 100%;
         min-width: auto;
-        margin: 0 auto;
-        padding: 1.5rem;
+        margin: 0;
+        padding: 1.5rem 1rem;
     }
     
     .color-container {
@@ -411,5 +424,19 @@ article:hover .icon {
     #socials-container .icon {
         height: 2.5rem;
         width: 2.5rem;
+    }
+
+    .theme-switch {
+        transform: scale(0.85);
+        -webkit-tap-highlight-color: transparent;
+    }
+    
+    #hamburger-nav {
+        height: 10vh;
+        padding: 0 1rem;
+    }
+    
+    .nav-left {
+        gap: 0.25rem;
     }
 }
